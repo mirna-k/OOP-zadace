@@ -72,7 +72,7 @@ namespace ClassLibrary_DZ2
             Console.WriteLine(weeklyForecast.GetAsString());
             Console.WriteLine("Maximal weekly temperature:");
             Console.WriteLine(weeklyForecast.GetMaxTemperature());
-            Console.WriteLine(dailyForecasts[0].GetAsString()); //izmjenjeno: Console.WriteLine(weeklyForecast[0].GetAsString());
+            Console.WriteLine(weeklyForecast[0].GetAsString());
         }
     }
 }
