@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Text;
 
@@ -30,13 +31,13 @@ namespace ClassLibrary_DZ2
 
         public static DailyForecast Parse(string v)
         {
-            char tocka = '.'; //u file.txt zamijenje su tocke i zarezi jer u protivnom se broj citao kao int a ne double
-            string[] odvojeno = v.Split(tocka);
+            char zarez = ','; 
+            string[] odvojeno = v.Split(zarez);
             DateTime dan = DateTime.Parse(odvojeno[0]);
             Weather vrijeme = new Weather();
-            vrijeme.temperature = double.Parse(odvojeno[1]);
-            vrijeme.humidity = double.Parse(odvojeno[2]);
-            vrijeme.windSpeed = double.Parse(odvojeno[3]);
+            vrijeme.temperature = double.Parse(odvojeno[1], CultureInfo.InvariantCulture);
+            vrijeme.humidity = double.Parse(odvojeno[2], CultureInfo.InvariantCulture);
+            vrijeme.windSpeed = double.Parse(odvojeno[3], CultureInfo.InvariantCulture);
 
             DailyForecast today = new DailyForecast(dan, vrijeme);
 
@@ -54,7 +55,7 @@ namespace ClassLibrary_DZ2
 
             // Assume a valid input file (correct format).
             // Assume that the number of rows in the text file is always 7. 
-            string fileName = @"C:\Users\mirna\source\repos\Zadaca_2\ClassLibrary_DZ2\file.txt";
+            string fileName = @"file.txt";
             if (File.Exists(fileName) == false)
             {
                 Console.WriteLine("The required file does not exist. Please create it, or change the path.");
