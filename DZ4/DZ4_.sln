@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp_DZ4", "ConsoleApp_DZ4\ConsoleApp_DZ4.csproj", "{9B7373E0-7A6E-4C31-BD8F-7BE06052B9FB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8056AC7B-5B68-4475-B3D0-C1D9708582A7} = {8056AC7B-5B68-4475-B3D0-C1D9708582A7}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClassLibrary_DZ4", "ClassLibrary_DZ4\ClassLibrary_DZ4.csproj", "{8056AC7B-5B68-4475-B3D0-C1D9708582A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B7373E0-7A6E-4C31-BD8F-7BE06052B9FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7373E0-7A6E-4C31-BD8F-7BE06052B9FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7373E0-7A6E-4C31-BD8F-7BE06052B9FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7373E0-7A6E-4C31-BD8F-7BE06052B9FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8056AC7B-5B68-4475-B3D0-C1D9708582A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8056AC7B-5B68-4475-B3D0-C1D9708582A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8056AC7B-5B68-4475-B3D0-C1D9708582A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8056AC7B-5B68-4475-B3D0-C1D9708582A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {775F3F08-8CFF-4F5A-952D-4AF7AC8D5CD2}
+	EndGlobalSection
+EndGlobal
